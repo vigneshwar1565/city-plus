@@ -1,6 +1,6 @@
 import {  useEffect, useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, useRoutes, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, useRoutes, Navigate } from 'react-router-dom';
 import { Home, Profile, Login, Register, Splash } from './Pages';
 import ProtectedRoute from './Auth/ProtectedRoute';
 import { initAuthListener, isAuthenticated } from './utils/auth';
@@ -45,7 +45,7 @@ function App() {
     setIsSplashShown(sessionStorage.getItem(process.env.REACT_APP_SPLASH_SHOWN_KEY) !== 'true');
     document.documentElement.dir = localStorage.getItem('language') === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = localStorage.getItem('language') || defaultLanguage;
-  }, []);
+  }, [defaultLanguage]);
 
   if (isSplashShown) {
     return <Router>

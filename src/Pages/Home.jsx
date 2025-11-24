@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { Card, Event, Nav, SearchField } from "../Components";
 import { useFavourites, useApi } from "../Hooks";
 import en from "../translations/en.json";
@@ -36,6 +36,7 @@ const Home = () => {
       setSelectedEvent(location.state.event);
     }
     getEvents(0, defaultPageSize);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getEvents = async (page = 0, size = defaultPageSize) => {

@@ -26,6 +26,7 @@ const Event = ({ event, t, favourites, setFavourite }) => {
         }
       })();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [event]);
 
   const tabletImage =
