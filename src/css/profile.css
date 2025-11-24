@@ -1,0 +1,175 @@
+/* ============= PROFILE PAGE ============= */
+
+.profile-container {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.profile-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.profile-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6B9BD1;
+    margin: 30px 0 40px 0;
+    text-align: center;
+}
+
+.profile-section {
+    margin: 40px 0;
+}
+
+.profile-section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Grid layout for User Info and Account Settings */
+.profile-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.profile-info-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.profile-info-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info-item {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 16px 0;
+    line-height: 1.6;
+}
+
+.profile-info-item strong {
+    color: #6B9BD1;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+/* Favourites Grid - matches cards-grid from Home */
+.favourites-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+    width: 100%;
+    justify-items: center;
+}
+
+/* Ensure cards in profile match Home page card styles */
+.favourites-grid .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.favourites-grid .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.favourites-grid .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.favourites-grid .card h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 12px 0 8px 0;
+}
+
+.favourites-grid .card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 8px 0;
+}
+
+.favourites-grid .card .favourite-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-favourites {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    color: #666;
+    font-size: 1.1rem;
+    grid-column: 1 / -1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .favourites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .profile-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-title {
+        font-size: 2rem;
+    }
+    
+    .profile-section-title {
+        font-size: 1.5rem;
+    }
+    
+    .favourites-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-content {
+        padding: 16px;
+    }
+    
+    .profile-info-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}

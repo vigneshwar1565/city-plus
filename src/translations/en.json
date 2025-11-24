@@ -1,0 +1,66 @@
+{
+    "app": {
+      "title": "City Pulse"
+    },
+    "nav": {
+      "home": "Home",
+      "profile": "Profile",
+      "logout": "Logout"
+    },
+    "home": {
+      "title": "Events",
+      "eventDetails": "Event Details",
+      "searchKeywords": "Search Keywords",
+      "searchCities": "Search Cities",
+      "search": "Search",
+      "previous": "Previous",
+      "next": "Next",
+      "of": "of",
+      "noEventsFound": "No events found",
+      "loading": "Loading...",
+      "addToFavourites": "Add to favourites",
+      "removeFromFavourites": "Remove from favourites"
+    },
+    "event": {
+      "venue": "Venue",
+      "date": "Date",
+      "time": "Time",
+      "info": "Info",
+      "note": "Note",
+      "bookingStart": "Booking starts at",
+      "bookingEnd": "Booking ends at",
+      "gallery": "Gallery",
+      "promoter": "Promoter"
+    },
+    "profile": {
+      "title": "Profile",
+      "email": "Email",
+      "displayName": "Display Name",
+      "userId": "User ID",
+      "userInfo": "User Information",
+      "favourites": "My Favourites",
+      "noFavourites": "You haven't added any favourites yet.",
+      "accountSettings": "Account Settings",
+      "language": "Language",
+      "totalFavourites": "Total Favourites"
+    },
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Login",
+      "loading": "Loading...",
+      "noAccount": "Don't have an account?",
+      "register": "Register"
+    },
+    "register": {
+      "title": "Register",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Register",
+      "loading": "Loading...",
+      "hasAccount": "Already have an account?",
+      "login": "Login"
+    }
+  }
