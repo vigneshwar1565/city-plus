@@ -18,7 +18,7 @@ A modern web application for discovering and exploring local events powered by t
 
 ## Overview
 
-City Pulse is a responsive web application designed to help users discover, search, and manage local events. The application integrates with the Ticketmaster Discovery API to provide real-time event information, including venue details, dates, times, and location data. Users can create accounts, save favorite events, and customize their experience with multi-language support.
+City Pulse is a responsive web application designed to help users discover, search, and add favourite local events. The application integrates with the Ticketmaster Discovery API to provide real-time event information, including venue details, dates, times, and location data. Users can create accounts, save favorite events, and customize their experience with multi-language support.
 
 **Live Application:** [https://city-pulse-vr.netlify.app](https://city-pulse-vr.netlify.app)
 
@@ -28,7 +28,6 @@ City Pulse is a responsive web application designed to help users discover, sear
 - User registration and login using Firebase Authentication
 - Secure session management
 - Protected routes for authenticated users
-- User profile management
 
 ### Event Discovery
 - Browse events from the Ticketmaster Discovery API
@@ -38,7 +37,6 @@ City Pulse is a responsive web application designed to help users discover, sear
   - Venue details with address and location
   - Date and time information
   - Interactive Google Maps integration
-  - Booking information
 
 ### Search Functionality
 - Keyword-based event search
@@ -50,7 +48,6 @@ City Pulse is a responsive web application designed to help users discover, sear
 - Favorites management system
 - Multi-language support (English and Arabic)
 - Right-to-Left (RTL) layout support for Arabic
-- Responsive design for various screen sizes
 - Splash screen on initial page load
 - Modern UI with Flaticon integration
 
@@ -157,7 +154,7 @@ The application will be available at `http://localhost:3000/`
 
 2. **User Registration**
    - Click on the register link
-   - Provide a valid email address and password
+   - Provide a email address and password
    - Complete the registration process
 
 3. **User Login**
